@@ -31,11 +31,10 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	{
 		ptr_fresh = f(lst);
 		tmp = ft_lstnew(ptr_fresh->content, ptr_fresh->content_size);
-		if (tmp)
-		{
-			new_elem->next = tmp;
-			new_elem = tmp;
-		}
+		if (tmp == NULL)
+			return (NULL);
+		new_elem->next = tmp;
+		new_elem = tmp;
 		lst = lst->next;
 	}
 	return (begin_lst);
