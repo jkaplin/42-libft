@@ -6,7 +6,7 @@
 #    By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 10:05:39 by jkaplin           #+#    #+#              #
-#    Updated: 2019/03/03 17:25:42 by jkaplin          ###   ########.fr        #
+#    Updated: 2019/03/03 19:18:26 by jkaplin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ CFLAGS = -Wall -Werror -Wextra -I. -c
 SRC =	ft_atoi.c		\
 		ft_abs.c		\
 		ft_bzero.c		\
-		ft_inarray.c	\
 		ft_isalnum.c	\
 		ft_isalpha.c	\
 		ft_isascii.c	\
@@ -60,7 +59,6 @@ SRC =	ft_atoi.c		\
 		ft_strdel.c		\
 		ft_strdup.c		\
 		ft_strequ.c		\
-		ft_str_inarr.c	\
 		ft_striter.c	\
 		ft_striteri.c	\
 		ft_strjoin.c	\
