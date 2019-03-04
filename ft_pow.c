@@ -6,13 +6,13 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 17:33:10 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 18:10:06 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 09:20:13 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 long double	ft_pow(double n, int p)
 {
-	size_t	power;
+	long	power;
 
 	power = 1;
 	while (p > 0)

@@ -6,9 +6,11 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/19 17:52:21 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 15:37:40 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 10:45:45 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {

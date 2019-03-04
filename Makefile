@@ -6,7 +6,7 @@
 #    By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 10:05:39 by jkaplin           #+#    #+#              #
-#    Updated: 2019/03/04 08:56:30 by jkaplin          ###   ########.fr        #
+#    Updated: 2019/03/04 11:51:14 by jkaplin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRC =	ft_atoi.c		\
 		ft_abs.c		\
 		ft_average.c	\
 		ft_bzero.c		\
+		ft_idigits.c	\
 		ft_isalnum.c	\
 		ft_isalpha.c	\
 		ft_isascii.c	\
@@ -65,6 +66,7 @@ SRC =	ft_atoi.c		\
 		ft_striter.c	\
 		ft_striteri.c	\
 		ft_strjoin.c	\
+		ft_strlast.c	\
 		ft_strlcat.c	\
 		ft_strlen.c		\
 		ft_strmap.c		\

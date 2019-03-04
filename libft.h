@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 17:43:23 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 18:44:10 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 11:51:58 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,12 +89,14 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int				ft_isspace(char c);
 int				ft_isupper(char c);
 int				ft_islower(char c);
+int				ft_idigits(int num);
 double			ft_abs(double num);
 double			ft_average(double a, double b);
 double			ft_min(double a, double b);
 double			ft_max(double a, double b);
 long double		ft_pow(double n, int p);
 double			ft_sqrt(double num);
+int				ft_strlast(const char *str);
 char			*ft_strcapital(const char *str);
 
 #endif

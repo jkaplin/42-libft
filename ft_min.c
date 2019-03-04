@@ -6,11 +6,11 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 15:48:25 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 16:02:31 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 11:35:07 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_min(int a, int b)
+double	ft_min(double a, double b)
 {
 	if (a < b)
 		return (a);

@@ -6,11 +6,11 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 20:07:13 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 15:29:22 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 10:31:35 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {

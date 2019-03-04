@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 17:05:16 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 16:01:33 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 10:59:31 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,25 +17,16 @@ char	*ft_strtrim(char const *s)
 	char	*trimmed;
 	int		start;
 	int		end;
-	int		i;
 
 	start = 0;
-	while (s[start] == ' ' || s[start] == '\n' || s[start] == '\t')
+	while (ft_isspace(s[start]))
 		start++;
-	end = 0;
-	while (s[end])
-		end++;
-	end--;
-	while (s[end] == ' ' || s[end] == '\n' || s[end] == '\t')
+	end = ft_strlast(s);
+	while (end > start && ft_isspace(s[end]))
 		end--;
 	trimmed = ft_strnew(end - start + 1);
-	i = 0;
-	while (start <= end)
-	{
-		trimmed[i] = s[start];
-		i++;
-		start++;
-	}
-	trimmed[i] = '\0';
+	if (trimmed == NULL)
+		return (NULL);
+	trimmed = ft_strncpy(trimmed, &s[start], end - start + 1);
 	return (trimmed);
 }
