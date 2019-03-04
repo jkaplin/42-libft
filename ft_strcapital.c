@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/03 16:05:36 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 18:19:33 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/03 18:38:13 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcapital(const char *str)
 	char	*strcapital;
 	int		i;
 
-	strcapital = ft_strnew(str);
+	strcapital = ft_strnew(ft_strlen(str));
 	if (strcapital == NULL)
 		return (NULL);
 	i = 0;
@@ -27,9 +27,9 @@ char	*ft_strcapital(const char *str)
 		{
 			strcapital[i] = ft_toupper(str[i]);
 			i++;
-			break;
+			break ;
 		}
-		strcapital[i] = str[i]
+		strcapital[i] = str[i];
 		i++;
 	}
 	while (str[i])
@@ -37,6 +37,6 @@ char	*ft_strcapital(const char *str)
 		strcapital[i] = ft_tolower(str[i]);
 		i++;
 	}
-	strcapital[i] == '\0';
-	return (strcpy);
+	strcapital[i] = '\0';
+	return (strcapital);
 }
