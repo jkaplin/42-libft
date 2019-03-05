@@ -6,12 +6,11 @@
 #    By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 10:05:39 by jkaplin           #+#    #+#              #
-#    Updated: 2019/03/04 17:02:12 by jkaplin          ###   ########.fr        #
+#    Updated: 2019/03/04 20:02:17 by jkaplin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CC = gcc
 CFLAGS = -Wall -Werror -Wextra -I. -c
 
 SRC =	ft_atoi.c		\
@@ -89,11 +88,10 @@ OBJ = $(SRC:%.c=%.o)
 
 all: $(NAME)
 
-# This won't run if the .o files don't exist or are not modified
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
+	ranlib $(NAME)
 
-# This won't run if the source files don't exist or are not modified
 $(OBJ): $(SRC)
 	gcc $(CFLAGS) $(SRC)
 
@@ -105,6 +103,3 @@ fclean: clean
 
 re: fclean all
 
-# I use .PHONY to make sure that gnu make will still run even if files called
-# clean / fclean / all and re already exist in the directory
-.PHONY: clean fclean all re

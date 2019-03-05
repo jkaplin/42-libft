@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 17:41:15 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/04 10:55:58 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 20:23:32 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static int	arr_size(const char *s, char c)
 	return (array_size);
 }
 
-static void	words_alloc(const char *s, char c, char **array)
+static int	words_alloc(const char *s, char c, char **array)
 {
 	int		word_length;
 	int		i;
@@ -59,6 +59,8 @@ static void	words_alloc(const char *s, char c, char **array)
 		{
 			word_length++;
 			array[j] = ft_strnew(word_length);
+			if (array[j] == NULL)
+				return (-1);
 			j++;
 			word_length = 0;
 		}
@@ -67,6 +69,7 @@ static void	words_alloc(const char *s, char c, char **array)
 		i++;
 	}
 	array[j] = NULL;
+	return (0);
 }
 
 char		**ft_strsplit(char const *s, char c)
@@ -79,7 +82,8 @@ char		**ft_strsplit(char const *s, char c)
 	array = (char **)malloc(sizeof(char *) * (arr_size(s, c) + 1));
 	if (array == NULL)
 		return (NULL);
-	words_alloc(s, c, array);
+	if (words_alloc(s, c, array) == -1)
+		return (NULL);
 	j = 0;
 	i = 0;
 	while (s[i])
