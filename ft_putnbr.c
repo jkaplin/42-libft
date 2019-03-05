@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/19 16:17:49 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/03 15:42:50 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/04 16:11:33 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 void	ft_putnbr(int n)
 {
-	char	*str;
-
-	str = ft_itoa(n);
-	ft_putstr(str);
+	ft_putnbr_fd(n, 1);
 }
