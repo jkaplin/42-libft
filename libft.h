@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 17:43:23 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/04 20:02:05 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/06 20:04:55 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ double			ft_min(double a, double b);
 double			ft_max(double a, double b);
 long double		ft_pow(double n, int p);
 double			ft_sqrt(double num);
-int				ft_strlast(const char *str);
+int				ft_strlasti(const char *str);
 char			*ft_strcapital(const char *str);
 
 #endif

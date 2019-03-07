@@ -6,7 +6,7 @@
 #    By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 10:05:39 by jkaplin           #+#    #+#              #
-#    Updated: 2019/03/04 20:02:17 by jkaplin          ###   ########.fr        #
+#    Updated: 2019/03/06 20:05:20 by jkaplin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ SRC =	ft_atoi.c		\
 		ft_striter.c	\
 		ft_striteri.c	\
 		ft_strjoin.c	\
-		ft_strlast.c	\
+		ft_strlasti.c	\
 		ft_strlcat.c	\
 		ft_strlen.c		\
 		ft_strmap.c		\
