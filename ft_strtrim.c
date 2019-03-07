@@ -6,7 +6,7 @@
 /*   By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 17:05:16 by jkaplin           #+#    #+#             */
-/*   Updated: 2019/03/04 20:19:07 by jkaplin          ###   ########.fr       */
+/*   Updated: 2019/03/07 08:32:34 by jkaplin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strtrim(char const *s)
 	start = 0;
 	while (ft_isspace(s[start]))
 		start++;
-	end = ft_strlast(s);
+	end = ft_strlasti(s);
 	while (end > start && ft_isspace(s[end]))
 		end--;
 	trimmed = ft_strnew(end - start + 1);
