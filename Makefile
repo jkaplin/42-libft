@@ -6,7 +6,7 @@
 #    By: jkaplin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 10:05:39 by jkaplin           #+#    #+#              #
-#    Updated: 2019/03/06 20:07:33 by jkaplin          ###   ########.fr        #
+#    Updated: 2019/03/09 09:41:34 by jkaplin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,8 @@ SRC =	ft_atoi.c		\
 		ft_strsub.c		\
 		ft_strtrim.c	\
 		ft_tolower.c	\
-		ft_toupper.c
+		ft_toupper.c	\
+		get_next_line.c
 
 OBJ = $(SRC:%.c=%.o)
 
